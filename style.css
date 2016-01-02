@@ -1,4 +1,4 @@
-.fullscreen-bg {
+/*.fullscreen-bg {
     position: fixed;
     top: 0;
     right: 0;
@@ -6,15 +6,7 @@
     left: 0;
     overflow: hidden;
     z-index: -100;
-}
-
-.fullscreen-bg_video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+}*/
 
 #playlistHolder {
     height: 625px;
@@ -88,3 +80,39 @@ animation-duration:2s;
     height: 100%;
   }
 }
+
+.aligner {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+
+.aligner .aligned {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#headerMessage {
+  color: white;
+  text-align: center;
+  width: 740px;
+  margin: 0 auto;
+}
+
+#headerMessage h1 {
+  font-size: 6em;
+}
+
+#headerMessage p {
+  font-size: 1.4em;
+}
+
+.theMessage {
+  height: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
