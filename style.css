@@ -65,6 +65,12 @@
   60% {transform: translateY(-15px);}
 }
 
+.movie-title {
+  color: #fff;
+  background-color: #222;
+  padding: 20px 30px;
+}
+
 
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg_video {
