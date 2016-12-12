@@ -21,6 +21,7 @@ var hideLogo = function() {
 
 var watch = function() {
   document.getElementById('message').setAttribute('style', 'opacity:0');
+  video.volume = 1;
 }
 
 video.addEventListener('loadedmetadata', function() {
