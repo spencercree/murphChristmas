@@ -8,11 +8,30 @@
   <link href="style.css" rel="stylesheet" />
   <link href="homeAlone.css" rel="stylesheet" />
 </head>
-<body>
+<body id="ha">
   <p id="logo">HomeAlone.tv</p>
+  <div id="container" class="container-fluid" data-season="winter">
+    <div class="fullscreen-bg" id="headerMessage">
+      <div class="aligner" style="height:100%;">
+        <div class="aligned">
+          <div id="message">
+            <h2>HomeAlone.tv</h2>
+            <p>Welcome to HomeAlone.tv, where Home Alone - and only Home Alone - plays 24/7! It wouldn't be Christmas if you didn't watch this movie 5 or 6 times (a week).</p>
+            <br />
+            <br />
+            <div id="sync-icon" onclick="watch()">SYNCING</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <video playsinline loop id="bgvid">
     <source src="https://dl.dropboxusercontent.com/s/yjqn06az0jo1c8g/home_alone.mp4" type="video/mp4">
   </video>
+  <script>
+    var windowHeight = window.innerHeight;
+    document.getElementById('headerMessage').setAttribute('style', 'height:' + windowHeight + 'px');
+  </script>
   <script src="homeAlone.js"></script>
 </body>
 </html>

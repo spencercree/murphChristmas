@@ -19,9 +19,27 @@ var hideLogo = function() {
   document.getElementById('logo').setAttribute('style', 'display:none');
 };
 
+var watch = function() {
+  document.getElementById('message').setAttribute('style', 'opacity:0');
+}
+
 video.addEventListener('loadedmetadata', function() {
   this.currentTime = calcPlaytime();
   video.play();
 
   setTimeout(hideLogo, 30000);
 }, false);
+
+//changes sync icon
+var i = setInterval(function() {
+  if(video.readyState > 0) {
+
+    setTimeout(function(){
+      document.getElementById('sync-icon').setAttribute('style', 'background-color:#f44336');
+      document.getElementById('sync-icon').innerHTML = 'WATCH';
+      document.getElementById('bgvid').setAttribute('style', 'opacity:1');
+    }, 3000);
+
+    clearInterval(i);
+  }
+}, 200);
