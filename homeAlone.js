@@ -15,10 +15,14 @@ var calcPlaytime = function() {
   return playTime;
 };
 
-window.addEventListener("keydown", function(event){
+window.addEventListener('keydown', function(event){
   if(event.keyCode === 83){
     video.currentTime = 0;
   }
+});
+
+video.querySelectorAll('source')[0].addEventListener('error', function(){
+  document.getElementById('error').setAttribute('style', 'display:inline-block');
 });
 
 var hideLogo = function() {

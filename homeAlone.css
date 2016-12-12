@@ -5,7 +5,7 @@
 #message {
   padding: 15px 0px;
   margin-top: -135px;
-  height: 300px;
+  min-height: 300px;
   width: 500px;
   background-color: #fff;
   color: #222;
@@ -70,3 +70,12 @@ video#bgvid {
   top: 0;
   left: 0;
 }
+
+#error {
+  font-size: 14px !important;
+  text-align: center !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #e57373;
+}
+
