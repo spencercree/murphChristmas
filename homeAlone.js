@@ -15,6 +15,12 @@ var calcPlaytime = function() {
   return playTime;
 };
 
+window.addEventListener("keydown", function(event){
+  if(event.keyCode === 83){
+    video.currentTime = 0;
+  }
+});
+
 var hideLogo = function() {
   document.getElementById('logo').setAttribute('style', 'display:none');
 };
