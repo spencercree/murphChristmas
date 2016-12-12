@@ -62,10 +62,11 @@ video#bgvid {
 
 #logo {
   padding: 15px 25px;
-  font-size: 35px;
+  font-size: 35px !important;
   color: #fff;
   font-family: 'Mirza', cursive;
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.3);
-  z-index: 2;
-  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
