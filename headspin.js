@@ -41,19 +41,19 @@ $(document).ready(function(){
           $('#spins').html(spins);
         }
         if(spins === 10){
-          $message.html('You really like tacos!');
+          $message.html('You really like Christmas!');
           $body.append($message);
           $message.fadeIn('slow');
         }
         if(spins === 20){
-          $message.html('Holy spinning taco!');
+          $message.html('All I want for Christmas is YOUUUUUUU!');
           $body.append($message);
         }
         if(spins === 30){
           $message.fadeOut('slow');
         }
         if(spins === 100){
-          $message.html('One hundred spins! You don\'t fool around.');
+          $message.html('One hundred spins! It\'s a Christmas miracle.');
           $body.append($message);
           $message.fadeIn('slow');
         }
@@ -61,16 +61,16 @@ $(document).ready(function(){
           $message.fadeOut('slow');
         }
         if(spins === 10000){
-          $message.html('Uhhh... taco spin master?');
+          $message.html('All Mariah wants for Christmas is you!');
           $body.append($message);
           $message.fadeIn('slow');
         }
         if(spins === 100000){
-          $message.html('Nobody likes tacos more than you.');
+          $message.html('Murph is now the only person who likes Christmas more than you.');
           $body.append($message);
         }
         if(spins === 1000000){
-          $message.html('Time for you to open a taco shop.');
+          $message.html('You officially like Christmas more than Murph!');
           $body.append($message);
         }
       },
