@@ -121,3 +121,41 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Spinning Head */
+#head {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -268px 0px 0 -237px;
+}
+
+#message {
+  position: absolute;
+  bottom: 20px;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+#spins {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  position: absolute;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  line-height: 50px;
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#player {
+  opacity: 0;
+}
+
