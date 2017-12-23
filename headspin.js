@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var spins = 0,
-      $message = $('<div id=\'message\'/>'),
+      $message = $('<div id=\'spin-message\'/>'),
       $head = $('#head'),
       $body = $('body'),
       realTaco = '/assets/img/taco.jpg',
